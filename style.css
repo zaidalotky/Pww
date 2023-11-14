@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    gap: 30px;
+    background: #191C24;
+}
+.inputBox{
+    position: relative;
+    width: 250px;
+}
+.inputBox input{
+width: 100%;
+padding: 10px;
+border: 1px solid rgba(255,255,255,0.25);
+background: #191C24;
+border-radius: 5px;
+outline: none;
+color: #fff;
+font-size: 1em;
+transition: 0.5s;
+}
+.inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: rgba(255,255,255,0.25);
+    text-transform: uppercase;
+    transition: 0.5s;
+    
+}
+
+.inputBox input:focus ~ span{
+color: #00dfc4;
+transform: translateX(10px)translateY(-7px);
+font-size: 0.65em;
+padding: 0 10;
+background:#191C24 ;
+border-left: 1px solid #00dfc4;
+border-right: 1px solid #00dfc4;
+letter-spacing: 0.2em;
+
+}
+
+
+
+.inputBox input:valid,
+.inputBox input:focus{
+    border:1px solid #00dfc4;
+} 
+.middle{
+   
+    transform: translate(-50%, -50%);
+    text-align: center;
+    
+}
+.btn{
+    position: relative;
+    background: none;
+    border: 2px solid rgba(255,255,255,0.25);
+    font-family: "montserrat",sans-serif;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    min-width: 200px;
+    cursor: pointer;
+    transition: color 0.4s linear;
+    position: relative;
+    left: 120px;
+    color:  rgba(255,255,255,0.25);
+    border-radius: 10px;
+}
+.btn:hover{
+    color:#00dfc4;
+    border:2px solid #00dfc4;
+}
+.img{
+border-radius:100px ;
+width: 200px;
+height: 200px;
+}
